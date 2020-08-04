@@ -1,0 +1,22 @@
+.inline-p {
+  display: inline;
+}
+
+.counter-wrapper {
+  display: flex;
+  width: 100vw;
+  justify-content: space-around;
+}
+
+.bg-aqua {
+  background-color: aqua;
+}
+
+.bg-golden {
+  background-color: goldenrod;
+}
+
+.flex-center {
+  justify-content: center;
+  margin-top: 10px;
+}

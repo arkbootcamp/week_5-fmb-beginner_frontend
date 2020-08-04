@@ -1,0 +1,66 @@
+.submit-button {
+  background-color: aqua;
+  /* width: 100px; */
+  height: 30px;
+  margin-top: 2px;
+  font-weight: bold;
+  border-color: red;
+}
+
+.submit-button:hover {
+  color: azure;
+  background-color: chartreuse;
+}
+
+.header-text {
+  color: blueviolet;
+}
+
+.outside {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: goldenrod;
+}
+
+.header-text::first-letter {
+  font-size: x-large;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+
+/* body {
+    background-color: bisque;
+    margin-left: 0px;
+  } */
+
+.box {
+  /* background-color: grey; */
+  width: 100vw;
+  height: 50vh;
+  /* overflow-y: scroll; */
+  box-sizing: border-box;
+  margin-top: 10px;
+  display: flex;
+  border-style: dotted;
+  padding: 10px;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.small {
+  border-color: rgb(138, 21, 21);
+  border-width: 5px;
+  border-radius: 5px;
+  border-style: solid;
+  font-size: large;
+  background-color: lightgrey;
+  max-width: 30%;
+  max-height: 30%;
+  flex: 1;
+  box-sizing: border-box;
+}
+
+.hello-header {
+  margin-top: 0px;
+}
