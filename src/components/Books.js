@@ -1,6 +1,6 @@
 import React from "react";
 
-const Books = ({ arrBooks }) => {
+const Books = ({ arrBooks, isShow }) => {
   //   const { arrBooks } = props;
   //   console.log(arrBooks);
   //   if (arrBooks.length) {
@@ -26,14 +26,14 @@ const Books = ({ arrBooks }) => {
     console.log(bookList);
     return bookList;
   };
-
   // Ternary Operator / Short Circuit Logic
   // Condition ? if true : if false
   return (
-    <>
-      <h1>Here are the Books</h1>
+    // <div className={isShow ? "book-wrapper" : "book-wrapper hidden"}>
+    <div className="book-wrapper">
+      <h1 className="books">Here are the Books</h1>
       {arrBooks.length ? <ol>{arrToLi()}</ol> : <h2>Loading...</h2>}
-    </>
+    </div>
   );
 };
 

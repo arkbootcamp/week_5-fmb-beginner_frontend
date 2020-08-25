@@ -13,6 +13,7 @@ class Home extends React.Component {
       books: [],
       booksName: "Harry Potter - The Deathly Hallows",
       title: "Home React",
+      isShow: true,
     };
     document.title = this.state.title;
   }
@@ -83,7 +84,13 @@ class Home extends React.Component {
             <button>Navigasi</button>
           </Link>
         </div>
-        <Books arrBooks={this.state.books} />
+        <button onClick={() => this.setState({ isShow: !this.state.isShow })}>
+          Show/Hide Books
+        </button>
+        {this.state.isShow ? (
+          <Books arrBooks={this.state.books} isShow={this.state.isShow} />
+        ) : null}
+        {/* <Books arrBooks={this.state.books} isShow={this.state.isShow} /> */}
       </>
     );
   }
