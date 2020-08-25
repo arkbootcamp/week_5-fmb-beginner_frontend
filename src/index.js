@@ -3,10 +3,20 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import AppRouter from "./AppRouter";
 import * as serviceWorker from "./serviceWorker";
+import { Provider } from "react-redux";
+import reduxStore from "./redux/store";
+
+const AppWithRedux = () => {
+  return (
+    <Provider store={reduxStore}>
+      <AppRouter />
+    </Provider>
+  );
+};
 
 ReactDOM.render(
   <React.StrictMode>
-    <AppRouter />
+    <AppWithRedux />
   </React.StrictMode>,
   document.getElementById("root")
 );

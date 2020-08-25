@@ -6,12 +6,20 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
 import FromHTML from "./pages/FromHTML";
+import Login from "./pages/Login";
+import NameAndCounter from "./pages/NameAndCounter";
+import PrivateRoute from "./components/PrivateRoute";
 
 const AppRouter = () => {
   return (
     <Router>
-      <Route path="/" exact component={Home} />
+      <PrivateRoute path="/private" exact>
+        <Home />
+      </PrivateRoute>
+      {/* <Route path="/" exact component={Home} /> */}
       <Route path="/html" component={FromHTML} />
+      <Route path="/login" component={Login} />
+      <Route path="/" exact component={NameAndCounter} />
     </Router>
   );
 };

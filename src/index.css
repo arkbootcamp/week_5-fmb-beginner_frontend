@@ -24,3 +24,14 @@ code {
   border: 2px solid black;
   background-color: azure;
 }
+
+.d-block {
+  display: block;
+}
+
+.container {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}

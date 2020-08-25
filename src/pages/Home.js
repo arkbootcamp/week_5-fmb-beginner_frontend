@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Axios from "axios";
+// import Axios from "axios";
 
 import "../styles/Home.css";
 import Counter from "../components/Counter";
@@ -22,16 +22,19 @@ class Home extends React.Component {
     // console.log("did mount");
     // console.log(this.state);
     // document.title = this.state.booksName;
-    const URLString = `${process.env.REACT_APP_API_URL}/books`;
-    setTimeout(() => {
-      Axios.get(URLString)
-        .then((res) => {
-          this.setState({
-            books: res.data.data,
-          });
-        })
-        .catch((err) => console.log(err));
-    }, 2000);
+    // const URLString = `${process.env.REACT_APP_API_URL}/books`;
+    // setTimeout(() => {
+    //   Axios.get(URLString)
+    //     .then((res) => {
+    //       this.setState({
+    //         books: res.data.data,
+    //       });
+    //     })
+    //     .catch((err) => console.log(err));
+    // }, 2000);
+
+    //check status login
+    //jika belum login maka di redirect
   };
 
   componentDidUpdate = () => {
