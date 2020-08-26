@@ -19,7 +19,13 @@ const AppRouter = () => {
       {/* <Route path="/" exact component={Home} /> */}
       <Route path="/html" component={FromHTML} />
       <Route path="/login" component={Login} />
-      <Route path="/" exact component={NameAndCounter} />
+      <Route
+        path="/"
+        exact
+        render={(...props) => (
+          <NameAndCounter {...props} firstName="Boot" lastName="Camp" />
+        )}
+      />
     </Router>
   );
 };

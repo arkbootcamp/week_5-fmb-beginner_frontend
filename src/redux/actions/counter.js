@@ -1,10 +1,12 @@
+import { increase, decrease } from "./actionTypes";
+
 export const increaseCreator = () => {
   return {
-    type: "INCREASE",
+    type: increase,
   };
 };
 export const decreaseCreator = () => {
   return {
-    type: "DECREASE",
+    type: decrease,
   };
 };

@@ -1,3 +1,5 @@
+import { firstName, lastName } from "../actions/actionTypes";
+
 const initialState = {
   firstName: "Arka",
   lastName: "Demy",
@@ -9,12 +11,12 @@ const nameReducer = (prevState = initialState, action) => {
   //counter => INCREASE, DECREASE
   //conditional
   switch (action.type) {
-    case "CHANGE_FIRSTNAME":
+    case firstName:
       return {
         ...prevState,
         firstName: prevState.firstName + action.payload,
       };
-    case "CHANGE_LASTNAME":
+    case lastName:
       return {
         ...prevState,
         lastName: prevState.lastName + action.payload,

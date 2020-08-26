@@ -1,12 +1,14 @@
+import { firstName, lastName } from "./actionTypes";
+
 export const changeFirstnameCreator = (name) => {
   return {
-    type: "CHANGE_FIRSTNAME",
+    type: firstName,
     payload: name,
   };
 };
 export const changeLastnameCreator = (name) => {
   return {
-    type: "CHANGE_LASTNAME",
+    type: lastName,
     payload: name,
   };
 };

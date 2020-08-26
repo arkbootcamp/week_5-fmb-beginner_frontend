@@ -1,6 +1,7 @@
 import { combineReducers } from "redux";
 import counterReducer from "./counter";
 import nameReducer from "./name";
+import asyncAPIReducer from "./asyncAPI";
 
 //menggabungkan beberapa reducer
 const indexReducer = combineReducers({
@@ -9,6 +10,7 @@ const indexReducer = combineReducers({
   //value => reducer
   counter: counterReducer,
   name: nameReducer,
+  asyncAPI: asyncAPIReducer,
 });
 
 export default indexReducer;
